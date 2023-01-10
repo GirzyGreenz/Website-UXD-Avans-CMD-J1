@@ -3,7 +3,7 @@ body {
     padding: 0;
     margin: 0;
 
-    background-image: url("../media/images/website-background.jpg");
+    background-color: darksalmon;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;

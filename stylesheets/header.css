@@ -1,15 +1,15 @@
 .header-container {
-    padding: 5px;
-
+    background-color: white;
     display: grid;
-    grid-template-columns: auto auto auto;
-
-
+    grid-gap: 5px;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 50px;
 }
 
 .cell {
-    background-color: aquamarine;
-    padding: 5px;
+    display: flex;
     align-items: center;
-    align-text: center;
+    justify-content: center;
+    background-color: aquamarine;
+    padding: 20px;
 }

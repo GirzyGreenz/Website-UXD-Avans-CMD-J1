@@ -1,42 +1,42 @@
-.container {
+body {
     background-color: darksalmon;
+}
+
+.container {
     display: grid;
+    grid-gap: 5px;
     grid-template-columns: 100px auto 100px;
     grid-template-rows: 100px 100px;
+    padding: 20px;
+}
+
+.centerCells {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration-color: antiquewhite;
 }
 
 #cell1 {
     background-color: aqua;
-    align-items: center;
-    align-content: center;
 }
 
 #cell2 {
     background-color: cornflowerblue;
-    align-items: center;
-    align-content: center;
 }
 
 #cell3 {
     background-color: crimson;
-    align-items: center;
-    align-content: center;
 }
 
 #cell4 {
     background-color: deeppink;
-    align-items: center;
-    align-content: center;
 }
 
 #cell5 {
     background-color: blueviolet;
-    align-items: center;
-    align-content: center;
 }
 
 #cell6 {
     background-color: darkgreen;
-    align-items: center;
-    align-content: center;
 }
