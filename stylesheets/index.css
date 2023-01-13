@@ -1,42 +1,66 @@
 body {
-    background-color: darksalmon;
+    height: 100%;
+    background-color: white;
+
 }
 
-.container {
+.loginContainer {
+    align-content: center;
+    height: 100vh;
     display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 100px auto 100px;
-    grid-template-rows: 100px 100px;
-    padding: 20px;
+    grid-gap: 8px;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d";
 }
 
-.centerCells {
+.cells {
+    padding-left: 10px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
+    justify-content: left;
+}
+
+.loginCredentials {
+    background-color: rgb(27 29 31);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.loginCredentialsInput {
+    color: #ffffff;
+    border: none;
+    background-color: rgb(27 29 31);
+    width: 95%;
+}
+
+#accountInformatie {
+    grid-area: a;
+}
+
+#buurtnummmer {
+    grid-area: b;
+}
+
+#wachtwoord {
+    grid-area: c;
+}
+
+#inloggen {
+    grid-area: d;
+    outline: 0;
+    background-color: rgb(68 146 116);
     justify-content: center;
-    text-decoration-color: antiquewhite;
 }
 
-#cell1 {
-    background-color: aqua;
-}
-
-#cell2 {
-    background-color: cornflowerblue;
-}
-
-#cell3 {
-    background-color: crimson;
-}
-
-#cell4 {
-    background-color: deeppink;
-}
-
-#cell5 {
-    background-color: blueviolet;
-}
-
-#cell6 {
-    background-color: darkgreen;
+/*#inloggen:hover {
+    background-color: white;
+    border-color: rgb(68 146 116);
+    border-width: 3px;
 }

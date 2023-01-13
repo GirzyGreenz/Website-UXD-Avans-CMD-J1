@@ -1,0 +1,11 @@
+body {
+    /* Cancels out all the default margins in webbrowsers */
+    padding: 0;
+    margin: 0;
+
+    background-color: darksalmon;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}

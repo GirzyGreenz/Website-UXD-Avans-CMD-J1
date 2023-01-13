@@ -1,0 +1,42 @@
+.footer-container {
+    background-color: white;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+        "a b c d e";
+
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+#nav-left {
+    grid-area: a;
+}
+
+#nav-secondleft {
+    grid-area: b;
+}
+
+#nav-mid {
+    grid-area: c;
+}
+
+#nav-secondright {
+    grid-area: d;
+}
+
+#nav-right {
+    grid-area: e;
+}
