@@ -1,11 +1,45 @@
 body {
-    /* Cancels out all the default margins in webbrowsers */
-    padding: 0;
-    margin: 0;
-
-    background-color: darksalmon;
+    background-image: url("../media/images/belcrumMaps.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+.mapContainer {
+    align-content: center;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+        ". . . . . ."
+        ". . . . . ."
+        ". . . a . ."
+        ". b . . . ."
+        ". . . . c ."
+        ". . . . . ."
+        ". . . . . ."
+        ". . . . . .";
+}
+
+#cell1 {
+    grid-area: a;
+}
+
+#cell2 {
+    grid-area: b;
+}
+
+#cell3 {
+    grid-area: c;
 }

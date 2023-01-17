@@ -19,7 +19,6 @@ img {
     bottom: 0;
     z-index: 100;
     display: grid;
-    padding-top: 1px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
