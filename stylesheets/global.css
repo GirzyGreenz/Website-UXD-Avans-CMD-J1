@@ -20,4 +20,23 @@ a {
 .defaultText {
     font-family: berlinSans;
     font-size: 20px;
+    color: #1B1D1F;
+}
+
+.headerText {
+    font-family: berlinSans;
+    font-size: 50px;
+    color: #1B1D1F;
+}
+
+.header2Text {
+    font-family: berlinSans;
+    font-size: 25px;
+    color: #1B1D1F;
+}
+
+.navBarText {
+    font-family: berlinSans;
+    font-size: 15px;
+    color: #ffffff;
 }

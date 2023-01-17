@@ -14,10 +14,6 @@
         rel="stylesheet" type="text/css" />
 
     <title>Home</title>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
 </head>
 
 <body>
@@ -32,10 +28,14 @@
         <div class="loginCredentials cells" id="wachtwoord">
             <input class="loginCredentialsInput defaultText" type="text" placeholder="Wachtwoord">
         </div>
-        <div href="./home.html" class="cells defaultText" id="inloggen">
-            <a>Inloggen</a>
+        <div onclick="window.location.href='./home.html';" class="cells" id="inloggen">
+            <a class="defaultText">Inloggen</a>
         </div>
+        <!-- <div class="cells">
+            <Button onclick="window.location.href='./home.html';" class="defaultText" id="inloggen">Inloggen</Button>
+        </div> -->
     </div>
+
 
 </body>
 
