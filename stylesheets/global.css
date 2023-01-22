@@ -1,5 +1,7 @@
 body {
     /* Cancels out all the default margins in webbrowsers */
+    height: 100%;
+    background-color: white;
     padding: 0;
     margin: 0;
     background-repeat: no-repeat;
@@ -13,14 +15,20 @@ body {
     font-family: berlinSans;
 }
 
-a {
+.defaultTextWhite {
     font-family: berlinSans;
 }
 
-.defaultText {
+.defaultTextBlack {
+    font-family: berlinSans;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.defaultTextWhite {
     font-family: berlinSans;
     font-size: 20px;
-    color: #1B1D1F;
+    color: #ffffff;
 }
 
 .headerText {

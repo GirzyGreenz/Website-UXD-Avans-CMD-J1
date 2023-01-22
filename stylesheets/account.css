@@ -1,11 +1,80 @@
-body {
-    /* Cancels out all the default margins in webbrowsers */
-    padding: 0;
-    margin: 0;
+/*Image Css---------------------------------------*/
+.centerProfileCells {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    background-color: darksalmon;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+#accountImg {
+    border-radius: 50%;
+    height: 40%;
+    width: 40%;
+}
+
+#imgBox {
+    padding-top: 25%;
+    padding-bottom: 5px;
+}
+
+/*Edit Containers Css---------------------------------------*/
+
+.buurtContainers {
+    grid-gap: 8px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 30px;
+}
+
+.contentAccountContainer {
+    border-radius: 10px;
+    grid-gap: 2px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "cc cc"
+        "bb aa";
+}
+
+/*Edit Titel Css---------------------------------------*/
+
+.textInfoBox {
+    grid-area: cc;
+    justify-content: center;
+    font-family: berlinSans;
+    font-size: 20px;
+    color: #1B1D1F;
+    margin-bottom: -25px;
+}
+
+/*Edit Imput Css---------------------------------------*/
+
+.imputDiv {
+    grid-area: bb;
+}
+
+.imputTextBox {
+    padding-left: 10px;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(27 29 31);
+    width: 95%;
+    height: 25px;
+}
+
+/*Edit Pencil Icon Css---------------------------------------*/
+
+.imgBox {
+    grid-area: aa;
+}
+
+.editIcon {
+    content: url(../media/icons/edit-icon-grey.png);
+    width: 80%;
+    height: 80%;
 }

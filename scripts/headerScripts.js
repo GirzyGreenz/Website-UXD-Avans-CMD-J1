@@ -1,36 +1,36 @@
-let x = "Page titel";
+let pageTitel = "Page titel";
 
 let url = window.location.href.toString();
 let strs = url.split("/");
 let activePage = strs[4].toString();
 
 console.log(activePage);
-document.getElementById("headerTitel").innerHTML = x;
+document.getElementById("headerTitel").innerHTML = pageTitel;
 
 switch (activePage) {
     case "home.html":
-        x = "Evenementen";
+        pageTitel = "Evenementen";
         break;
     case "404-pagina.html":
-        x = "404";
+        pageTitel = "404";
         break;
     case "account.html":
-        x = "Jouw account";
+        pageTitel = "Jouw account";
         break;
     case "berichten.html":
-        x = "Berichten";
+        pageTitel = "Berichten";
         break;
     case "buurtgenoten.html":
-        x = "Buurtgenoten";
+        pageTitel = "Buurtgenoten";
         break;
     case "individueelEvenement.html":
-        x = "Evenement";
+        pageTitel = "Evenement";
         break;
     case "notificaties.html":
-        x = "notificaties";
+        pageTitel = "notificaties";
         break;
     case "map.html":
-        x = "Evenementen kaart";
+        pageTitel = "Evenementen kaart";
 }
 
-document.getElementById("headerTitel").innerHTML = x;
+document.getElementById("headerTitel").innerHTML = pageTitel;

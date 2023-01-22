@@ -6,6 +6,7 @@
     position: fixed;
     z-index: 102;
     transform-origin: top left;
+
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);

@@ -1,8 +1,23 @@
-body {
-    height: 100%;
+.footer-container {
+    border-radius: 60px;
+    background-color: #347C76;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 40px 10px;
+    grid-template-areas:
+        "a b c d e"
+        "f g h i j";
 }
 
-img {
+.iconDimensions {
     width: 50%;
     height: 50%;
     display: block;
@@ -12,25 +27,7 @@ img {
     padding-top: 10px;
 }
 
-.footer-container {
-    border-radius: 60px;
-    background-color: #347C76;
-    position: fixed;
-    bottom: 0;
-    z-index: 100;
-    display: grid;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 10px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 40px 10px;
-    grid-template-areas:
-        "a b c d e"
-        "f g h i j";
-}
-
-.cellFooter {
+.centerCellFooter {
     display: flex;
     align-items: center;
     justify-content: center;
