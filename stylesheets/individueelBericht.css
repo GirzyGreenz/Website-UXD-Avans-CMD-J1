@@ -1,0 +1,160 @@
+/*Image & name Css---------------------------------------*/
+.centerProfileCells {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profileImg {
+    border-radius: 50%;
+    height: 40%;
+    width: 40%;
+}
+
+#imgBox {
+    padding-top: 25%;
+}
+
+#profileText {
+    margin-top: -1px;
+}
+
+/*Buttons for profile---------------------------------------*/
+
+#actionButtonsBox {
+    grid-gap: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content() fit-content() fit-content();
+    grid-template-areas:
+        "jj"
+        "xx"
+        "ff";
+}
+
+#buttonWinkelen {
+    grid-area: xx;
+}
+
+#buttonWandelen {
+    grid-area: ff;
+}
+
+#buttonBezoek {
+    grid-area: jj;
+}
+
+/*Content in buttons---------------------------------------*/
+
+.actionButtonsStyle {
+    border-radius: 10px;
+    background-color: #449274;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    padding-bottom: 30px;
+    padding-top: 8px;
+    padding-left: 30px;
+    padding-right: 10px;
+    grid-gap: 10px;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas:
+        "ggg jjj"
+        "ggg ddd"
+        "fff kkk";
+}
+
+.buttonImages {
+    padding-top: 40px;
+    grid-area: ggg;
+    object-fit: contain;
+    height: 40px;
+    width: 40px;
+}
+
+.buttonText {
+    grid-area: fff;
+
+}
+
+.dateChoser {
+    grid-area: jjj;
+}
+
+.requestButton {
+    grid-area: kkk;
+}
+
+.locationChoser {
+    grid-area: ddd;
+}
+
+.popupButtonSend {
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-color: #347C76;
+    border-radius: 4px;
+    padding: 5px;
+    border-width: 0;
+}
+
+.selectStyling {
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    outline: none;
+    border-width: 0;
+    background-color: #347C76;
+    border-radius: 5px;
+}
+
+/*Whatsapp Button Box*/
+
+#whatsAppButtonsBox {
+    grid-gap: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 10px;
+    padding: 10px;
+    width: 1fr;
+    height: fit-content();
+    background-color: #449274;
+}
+
+#whatsAppImg {
+    height: 50%;
+    width: 50%;
+}
+
+#whatsAppText {
+    margin-top: 5px;
+}
+
+#whatsAppButton {
+    margin-top: 5px;
+}
+
+/*Css for default send-confirm popup*/
+
+.popupRequestAchtergrond {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupContent {
+    background-color: #449274;
+    padding: 20px;
+    border-radius: 10px;
+}

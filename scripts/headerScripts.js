@@ -26,8 +26,8 @@ switch (activePage) {
     case "individueelEvenement.html":
         pageTitel = "Evenement";
         break;
-    case "notificaties.html":
-        pageTitel = "notificaties";
+    case "individueelBericht.html":
+        pageTitel = "Bericht sturen";
         break;
     case "map.html":
         pageTitel = "Evenementen kaart";

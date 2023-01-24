@@ -10,6 +10,8 @@ body {
     background-size: cover;
 }
 
+/*Everything to do with textsFonts and sizes*/
+
 @font-face {
     src: url(../fonts/BRLNSDB.TTF);
     font-family: berlinSans;
@@ -43,6 +45,12 @@ body {
     color: #1B1D1F;
 }
 
+.header3Text {
+    font-family: berlinSans;
+    font-size: 20px;
+    color: #1B1D1F;
+}
+
 .navBarText {
     font-family: berlinSans;
     font-size: 15px;
@@ -59,4 +67,28 @@ body {
     font-family: berlinSans;
     font-size: 20px;
     color: #ffffff;
+}
+
+.headerEventText {
+    font-family: berlinSans;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.textWhite {
+    font-family: berlinSans;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.textGreenSmall {
+    font-family: berlinSans;
+    font-size: 15px;
+    color: #347C76;
+}
+
+/*Everything to do with whitespaces between or under items*/
+
+.whiteSpaceSmall {
+    height: 100px;
 }

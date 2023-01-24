@@ -8,6 +8,7 @@
     padding-left: 10px;
     padding-right: 10px;
     margin: 10px;
+    grid-gap: 5px;
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -18,8 +19,8 @@
 }
 
 .iconDimensions {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;

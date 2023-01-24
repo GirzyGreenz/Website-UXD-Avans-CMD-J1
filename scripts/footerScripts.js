@@ -15,7 +15,7 @@ if (activePageFooter == "map.html") {
 };
 
 
-if (activePageFooter == "home.html" || activePageFooter == "individueelEvenement") {
+if (activePageFooter == "home.html" || activePageFooter == "individueelEvenement.html") {
     document.getElementById("navImageEvenement").src = "../media/icons/event-grey.png";
     document.getElementById("navTextEvenement").style.color = "#1B1D1F";
 } else {
@@ -31,7 +31,7 @@ if (activePageFooter == "buurtgenoten.html") {
     document.getElementById("navTextBuurt").style.color = "#FFFFFF";
 };
 
-if (activePageFooter == "account.html" || activePageFooter == "notificaties.html") {
+if (activePageFooter == "account.html") {
     document.getElementById("navImageProfiel").src = "../media/icons/account-icon-grey.png";
     document.getElementById("navTextProfiel").style.color = "#1B1D1F";
 } else {
@@ -39,7 +39,7 @@ if (activePageFooter == "account.html" || activePageFooter == "notificaties.html
     document.getElementById("navTextProfiel").style.color = "#FFFFFF";
 };
 
-if (activePageFooter == "berichten.html") {
+if (activePageFooter == "berichten.html" || activePageFooter == "individueelBericht.html") {
     document.getElementById("navImageBericht").src = "../media/icons/text-icon-grey.png";
     document.getElementById("navTextBericht").style.color = "#1B1D1F";
 } else {

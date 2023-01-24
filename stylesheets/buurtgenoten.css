@@ -30,10 +30,10 @@
     margin-right: 10%;
 
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% 60% 20%;
     grid-template-rows: 100%;
     grid-template-areas:
-        "aa bb";
+        "aa bb cc";
 }
 
 #textBox {
@@ -53,7 +53,15 @@
 
 .profileImage {
     object-fit: contain;
-    height: 80%;
-    width: 80%;
+    height: 60%;
+    width: 60%;
     border-radius: 50%;
+}
+
+.addImg {
+    padding-top: 10px;
+    grid-area: cc;
+    object-fit: contain;
+    height: 40%;
+    width: 40%;
 }

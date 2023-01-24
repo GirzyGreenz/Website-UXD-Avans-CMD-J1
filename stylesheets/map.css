@@ -5,6 +5,8 @@ body {
     background-position: center;
 }
 
+/*Map icon containers css*/
+
 .mapContainer {
     align-content: center;
     height: 100vh;
@@ -36,6 +38,32 @@ body {
     grid-area: c;
 }
 
+/*Content in map icon containers css*/
+
+.individualMapContainer {
+    align-content: center;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20px 20px 50px;
+    grid-template-areas:
+        "cc"
+        "bb"
+        "aa";
+}
+
+.iconPin {
+    grid-area: aa;
+}
+
+.eventTitel {
+    grid-area: bb;
+}
+
+.eventDate {
+    grid-area: cc;
+}
+
 .mapPinIcon {
     width: 70%;
     height: 70%;
@@ -43,4 +71,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     object-fit: contain;
+}
+
+.centerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

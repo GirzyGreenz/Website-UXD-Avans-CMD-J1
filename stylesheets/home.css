@@ -1,3 +1,4 @@
+/*Evenementen Home Titel Texts ------------------------------*/
 .infoContainer {
     padding-top: 30%;
     margin-left: 10%;
@@ -28,6 +29,8 @@
     justify-content: left;
 }
 
+/*Evenementen Cells ------------------------------*/
+
 .eventContainer {
     padding-top: 1%;
     margin-left: 10%;
@@ -35,7 +38,7 @@
     grid-gap: 8px;
 
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-auto-rows: 75px;
 }
 
@@ -45,9 +48,40 @@
     justify-content: center;
 }
 
+/*Content in Evenementen Cells ------------------------------*/
+
 .eventCells {
     border-radius: 10px;
     background-color: #449274;
     box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.3);
+
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-auto-rows: 50% 50%;
+    grid-template-areas:
+        "aa bb"
+        "aa cc";
+}
+
+.eventImage {
+    grid-area: aa;
+}
+
+#eventImage {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+}
+
+.eventTitel {
+    grid-area: bb;
+    align-self: end;
+
+}
+
+.eventDate {
+    grid-area: cc;
+    align-self: start;
 }

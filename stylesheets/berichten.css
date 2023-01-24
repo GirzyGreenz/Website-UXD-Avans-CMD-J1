@@ -32,13 +32,14 @@
     grid-gap: 2px;
     margin-left: 10%;
     margin-right: 10%;
+    padding-right: 10px;
 
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% 60% 10% 10%;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-        "aa cc"
-        "aa bb";
+        "aa cc ee dd"
+        "aa bb ee dd";
 }
 
 .imgBox {
@@ -51,8 +52,8 @@
 
 .profileImage {
     object-fit: contain;
-    height: 80%;
-    width: 80%;
+    height: 65%;
+    width: 65%;
     border-radius: 50%;
 }
 
@@ -64,4 +65,57 @@
 .textInfoBox {
     grid-area: bb;
     align-self: start;
+}
+
+.denyImgBox {
+    grid-area: ee;
+    align-self: center;
+}
+
+.acceptImgBox {
+    grid-area: dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acceptImage {
+    object-fit: contain;
+    content: url(../media/icons/check-icon-white.png);
+    height: 60%;
+    width: 60%;
+}
+
+.denyImage {
+    object-fit: contain;
+    content: url(../media/icons/deny-icon-white.png);
+    height: 60%;
+    width: 60%;
+    padding-top: 5px;
+}
+
+/*Css for default send-confirm popup*/
+
+.popupRequestAchtergrond {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupContent {
+    background-color: #449274;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.textAlign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

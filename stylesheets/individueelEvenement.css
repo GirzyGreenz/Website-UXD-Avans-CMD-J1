@@ -1,11 +1,58 @@
-body {
-    /* Cancels out all the default margins in webbrowsers */
-    padding: 0;
-    margin: 0;
+/*Event header image CSS*/
+#headerImageContainer {
+    width: 100%;
+}
 
-    background-color: darksalmon;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+#headerImage {
+    object-fit: contain;
+    width: 100%;
+    border-style: solid;
+    border-color: #347C76;
+    border-width: 0px 0px 3px 0px;
+}
+
+/*Event Textbox CSS*/
+
+.centerCells {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#infoContainer {
+    border-radius: 10px;
+    background-color: #449274;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    grid-gap: 2px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 30px 30px fit-content(300px);
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d";
+}
+
+#infoHeader {
+    grid-area: a;
+}
+
+#infoDatumText {
+    grid-area: b;
+}
+
+#infoLocatieText {
+    grid-area: c;
+}
+
+#infoText {
+    grid-area: d;
 }

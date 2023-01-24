@@ -1,0 +1,160 @@
+<!-- designed for Iphone SE-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Pages -->
+    <link rel="stylesheet" href="../stylesheets/individueelBericht.css">
+    <link rel="stylesheet" href="../stylesheets/global.css">
+    <link href="https://www.dafontfree.net/embed/YmVybGluLXNhbnMtZmItZGVtaS1ib2xkJmRhdGEvMTMvYi82NDUzNi9CUkxOU0RCLlRURg"
+        rel="stylesheet" type="text/css" />
+
+    <title>Home</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(function () {
+            $("#header").load("../sections/header.html");
+            $("#footer").load("../sections/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Page Content -->
+    <div id="header"></div>
+
+    <div class="centerProfileCells" id="imgBox">
+        <img id="profileImg" src="../media/images/people/person1.jpeg">
+    </div>
+    <div class="centerProfileCells">
+        <h1 class="headerText" id="profileText">Lily James</h1>
+    </div>
+
+    <div id="actionButtonsBox">
+
+        <div class="actionButtonsStyle openConfirmSendPopup" id="buttonBezoek">
+            <div class="centerProfileCells">
+                <img class="buttonImages" src="../media/icons/coffee-icon-white.png">
+            </div>
+            <div class="buttonText centerProfileCells">
+                <a class="textWhite">Bezoek</a>
+            </div>
+            <div class="dateChoser centerProfileCells">
+                <select class="selectStyling textWhite">
+                    <optgroup class="defaultTextBlack" label="Tijd">
+                        <option class="defaultTextBlack" value="Ochtend">Ochtend</option>
+                        <option class="defaultTextBlack" value="Middag">Middag</option>
+                        <option class="defaultTextBlack" value="Avond">Avond</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="locationChoser centerProfileCells">
+                <select class="selectStyling textWhite">
+                    <optgroup class="defaultTextBlack" label="Ontmoetings Locatie">
+                        <option class="defaultTextBlack" value="Eigen huis">Eigen huis</option>
+                        <option class="defaultTextBlack" value="Lily's huis">Lily's huis</option>
+                        <option class="defaultTextBlack" value="Station">Station</option>
+                        <option class="defaultTextBlack" value="Belcrum park">Belcrum park</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="requestButton centerProfileCells">
+                <Button class="defaultTextBlack popupButtonSend">Aanvragen</Button>
+            </div>
+        </div>
+        <div class="actionButtonsStyle openConfirmSendPopup" id="buttonWinkelen">
+            <div class="centerProfileCells">
+                <img class="buttonImages" src="../media/icons/cart-icon-white.png">
+            </div>
+            <div class="buttonText centerProfileCells">
+                <a class="textWhite">Winkelen</a>
+            </div>
+            <div class="dateChoser centerProfileCells">
+                <select class="selectStyling textWhite">
+                    <optgroup class="defaultTextBlack" label="Tijd">
+                        <option class="defaultTextBlack" value="Ochtend">Ochtend</option>
+                        <option class="defaultTextBlack" value="Middag">Middag</option>
+                        <option class="defaultTextBlack" value="Avond">Avond</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="locationChoser centerProfileCells">
+                <select class="selectStyling textWhite">
+                    <optgroup class="defaultTextBlack" label="Ontmoetings Locatie">
+                        <option class="defaultTextBlack" value="Eigen huis">Eigen huis</option>
+                        <option class="defaultTextBlack" value="Lily's huis">Lily's huis</option>
+                        <option class="defaultTextBlack" value="Station">Station</option>
+                        <option class="defaultTextBlack" value="Belcrum park">Belcrum park</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="requestButton centerProfileCells">
+                <Button class="defaultTextBlack popupButtonSend">Aanvragen</Button>
+            </div>
+        </div>
+        <div class="actionButtonsStyle openConfirmSendPopup centerProfileCells" id="buttonWandelen">
+            <div class="centerProfileCells">
+                <img class="buttonImages" src="../media/icons/walking-icon-white.png">
+            </div>
+            <div class="buttonText centerProfileCells">
+                <a class="textWhite">Wandelen</a>
+            </div>
+            <div class="dateChoser centerProfileCells">
+                <select class="selectStyling textWhite">
+                    <optgroup class="defaultTextBlack" label="Tijd">
+                        <option class="defaultTextBlack" value="Ochtend">Ochtend</option>
+                        <option class="defaultTextBlack" value="Middag">Middag</option>
+                        <option class="defaultTextBlack" value="Avond">Avond</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="locationChoser centerProfileCells">
+                <select class="selectStyling textWhite">
+                    <optgroup class="defaultTextBlack" label="Ontmoetings Locatie">
+                        <option class="defaultTextBlack" value="Eigen huis">Eigen huis</option>
+                        <option class="defaultTextBlack" value="Lily's huis">Lily's huis</option>
+                        <option class="defaultTextBlack" value="Station">Station</option>
+                        <option class="defaultTextBlack" value="Belcrum park">Belcrum park</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="requestButton centerProfileCells">
+                <Button class="defaultTextBlack popupButtonSend">Aanvragen</Button>
+            </div>
+        </div>
+    </div>
+
+    <div id="whatsAppButtonsBox">
+        <div class="centerProfileCells">
+            <img class="centerProfileCells" id="whatsAppImg" src="../media/icons/whatsapp-icon-white.png">
+        </div>
+        <div class="buttonText centerProfileCells">
+            <a class="textWhite" id="whatsAppText">WhatsApp</a>
+        </div>
+        <div class="requestButton centerProfileCells">
+            <Button class="defaultTextBlack popupButtonSend" id="whatsAppButton">Openen</Button>
+        </div>
+    </div>
+
+    <div class="popupRequestAchtergrond" id="popupConfirmSend">
+        <div class="popupContent">
+            <a class="textWhite">Verzoek verstuurd</a>
+        </div>
+    </div>
+
+    <div class="whiteSpaceSmall"></div>
+
+    <div id="footer"></div>
+
+    <script src="../scripts/individueelBericht.js"></script>
+</body>
+
+</html>
